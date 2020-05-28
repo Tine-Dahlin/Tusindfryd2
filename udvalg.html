@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <!--meta charset betyder vi kan bruge æ,ø,å-->
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--altid unik title-->
+    <title>Tusindfryds Udvalg</title>
+
+    <!--udfyld content med en beskrivelse ad sidens indhold - unik for hver side op til 155-->
+    <meta name="description" content="Her finder du en masse udvalg af Tusindfryds produkter og forskellige inspirationer til dit næste blomster køb.">
+
+
+    <!--dette link referer til css stylesheet-->
+    <link rel="stylesheet" href="css/udvalg.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar&family=Reem+Kufi&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!--Nav bar with inspiration from this page: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown-->
+    <header>
+
+        <div class="topnav header" id="myTopnav">
+            <a href="index.html" class="logo"><img src="images/tusindfryd-logo.svg" alt="Logo"></a>
+
+            <nav>
+                <div class="dropdown"><button class="dropbtn">
+                        <a href="omos.html">Om os</a></button>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="udvalg.html">Udvalg</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">God bedring</a>
+                        <a href="vaertinde.html">Værtindegave</a>
+                        <a href="#">Student</a>
+                        <a href="#">Jul</a>
+                        <a href="#">Påske</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a>Inspiration</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Indret din bolig</a>
+                        <a href="plejning.html">Plejning</a>
+                        <a href="bryllup.html">Bryllups dekorationer</a>
+                        <a href="symbolik.html">Blomstersymbolik</a>
+                    </div>
+                </div>
+            </nav>
+            <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+
+    </header>
+
+
+
+    <main>
+
+        <h1 class="udvalg">UDVALG</h1><br>
+
+
+
+
+        <div class="container_udvalg">
+                <div class="udvalg1 button button1"><img class="udvalgbillede1" src="images/hjerte.svg" alt="hjerte ikon">
+                    <h3 class="udvalgtekst1">God bedring</h3>
+            </div>
+
+            
+                
+                    <div class="udvalg2 button button1"><a href="vaertinde.html"><img class="udvalgbillede2" src="images/blomst.svg" alt="blomster ikon">
+                        <h3 class="udvalgtekst2">Værtinde</h3></a>
+                    </div>
+                
+            
+            
+                <div class="udvalg3 button button1"><img class="udvalgbillede3" src="images/student.svg" alt="studenterhue ikon">
+                    <h3 class="udvalgtekst3">Student</h3>
+                </div>
+          
+
+            
+                <div class="udvalg4 button button1"><img class="udvalgbillede4" src="images/nytor.png" alt="konfetti ikon">
+                    <h3 class="udvalgtekst4">Nytår</h3>
+                </div>
+          
+
+            
+                <div class="udvalg5 button button1"><img class="udvalgbillede5" src="images/jul.svg" alt="juletræ ikon">
+                    <h3 class="udvalgtekst5">Jul</h3>
+                </div>
+            
+
+            
+                <div class="udvalg6 button button1"><img class="udvalgbillede6" src="images/gift.svg" alt="gift ikon">
+                    <h3 class="udvalgtekst6">Bryllup</h3>
+                </div>
+          
+
+            
+                <div class="udvalg7 button button1"><img class="udvalgbillede7" src="images/poske.svg" alt="påskekurv ikon">
+                    <h3 class="udvalgtekst7">Påske</h3>
+                </div>
+            
+
+                <div class="udvalg8 button button1"><img class="udvalgbillede8" src="images/fejring.png" alt="ballon ikon">
+                    <h3 class="udvalgtekst8">Jubilæum</h3>
+                </div>
+            </div>
+
+    </main>
+
+    <br><br><br>
+
+    <footer>
+        <div class="streg"></div>
+        <div class="container_footer">
+            <div class="kontakt">
+                <h4>Kontakt</h4>
+                <p class="pcenter">Adresse Søvej 6, 6630 Rødding</p>
+                <p class="pcenter"><a href="tel:74 44 20 80">Telefon: 74 44 20 80</a></p>
+                <p class="pcenter"><a href="mailto:dorte@jelsblomster.dk"> dorte@jelsblomster.dk</a></p>
+                <br>
+            </div>
+
+            <div class="om_os">
+                <h4>Om os</h4>
+                <p class="pcenter">Åbningstider</p>
+                <p class="pcenter">Hvem er Tusindfryd</p>
+                <p class="pcenter">Find inspiration</p>
+                <br>
+            </div>
+
+            <div class="folg_os">
+                <h4>Følg os</h4>
+                <div class="flex_fbig">
+                    <img class="fb" src="images/facebook.svg" alt="Tusindfryd - facebook ikon">
+                    <img class="insta" src="images/instagram%20(1).svg" alt="Tusindfryd - instagram ikon">
+                </div>
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="js.js">
+    </script>
+
+
+</body></html>

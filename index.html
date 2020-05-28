@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <!--meta charset betyder vi kan bruge æ,ø,å-->
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--altid unik title-->
+    <title>Tusindfryd-forside</title>
+
+    <!--udfyld content med en beskrivelse ad sidens indhold - unik for hver side op til 155-->
+    <meta name="description" content="Se vores brede udvalg af blomster til enhver anledning, og bliv inspireret og klogere på, hvordan du holder dine blomster, blomster symbolik og bryllupsborddækning mm.">
+
+
+    <!--dette link referer til css stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="header.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar&family=Reem+Kufi&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!--Nav bar with inspiration from this page: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown-->
+    <header>
+        
+            <div class="topnav header" id="myTopnav">
+                <a href="index.html" class="logo"><img src="images/tusindfryd-logo.svg" alt="Logo"></a>
+
+<nav>
+                <div class="dropdown"><button class="dropbtn">
+                        <a href="omos.html">Om os</a></button>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="udvalg.html">Udvalg</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">God bedring</a>
+                        <a href="vaertinde.html">Værtindegave</a>
+                        <a href="#">Student</a>
+                        <a href="#">Jul</a>
+                        <a href="#">Påske</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a>Inspiration</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Indret din bolig</a>
+                        <a href="plejning.html">Plejning</a>
+                        <a href="bryllup.html">Bryllups dekorationer</a>
+                        <a href="symbolik.html">Blomstersymbolik</a>
+                    </div>
+                </div>
+                </nav>
+
+                <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        
+    </header>
+
+    <main>
+        <div id="forsiden">
+            <video class="video" autoplay="autoplay" loop="loop" playsinline="" muted="">
+                <source src="images/hej.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <section class="baggrund">
+
+            <h2>Hvad tilbyder vi?</h2>
+            <div class="container_hvadtilbydervi">
+
+                <div class="kasse">
+                    <img class="ikon1" src="images/levering.svg" alt="levering ikon">
+                    <h4>Levering</h4>
+                    <p class="pcenter">Vi leverer direkte til din dør, lige når det passer dig</p>
+                </div>
+
+                <br>
+
+                <div class="kasse1">
+                    <img class="ikon2" src="images/leveringblomst%20ikon.svg" alt="blomst ikon">
+                    <h4>Blomster til enhver anledning</h4>
+                    <p class="pcenter">Forkæl dig selv og andre ved køb af en af vores unikke buketter</p>
+                </div>
+
+                <br>
+
+                <div class="kasse2">
+                    <img class="ikon3" src="images/abonnement.svg" alt="abonnement ikon">
+                    <h4>Abonnement</h4>
+                    <p class="pcenter">Har du lyst til at få sendt smukke blomster hver måned? Så prøv vores abonnement</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+            <h2>Inspiration</h2>
+            <div class="container_inspiration">
+
+                <div class="farvesymbolik">
+                    <img class="col fade-in" src="images/blomstersymbolik.jpg" alt="blomstersymbolik">
+                </div>
+                <div class="kasse3">
+                    <h3 class="h3center">Farvesymbolik på blomster</h3>
+                    <a href="symbolik.html" class="button button1">Læs mere her</a>
+                </div>
+
+                <br>
+
+                <div class="bryllup">
+                    <img class="col fade-in" src="images/bryllupny.jpg" alt="bryllup borddækning"></div>
+                <div class="kasse4">
+                    <h3 class="h3center">Borddekoration til dit bryllup</h3>
+                    <a href="bryllup.html" class="button button1">Læs mere her
+                    </a>
+                </div>
+
+                <br>
+
+                <div class="plejning">
+                    <img class="col fade-in" src="images/plejeafblomster.jpg" alt="Pleje af blomster"></div>
+                <div class="kasse5">
+                    <h3 class="h3center">Lær at holde dine blomster</h3>
+                    <a href="plejning.html" class="button button1">Læs mere her</a>
+                </div>
+            </div>
+            <br><br>
+        </section>
+
+
+        <section class="baggrund">
+
+            <h2>Nyhedsbrev</h2>
+
+            <!--Nav bar with inspiration from this page: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_newsletter-->
+            <div class="container_nyhedsbrev">
+                <input class="name" type="text" placeholder="Navn" name="name" required>
+                <img class="name_ikon" src="images/navn.svg" alt="navn ikon">
+                <input class="mail" type="text" placeholder="Email" name="mail" required>
+                <img class="mail_ikon" src="images/mail.svg" alt="mail ikon">
+
+                <input class="send" type="submit" value="Send">
+            </div>
+
+        </section>
+
+        <br><br>
+
+
+        <div class="container_instagram">
+            <div><a href="...."><img class="ig1" src="images/billede1.jpeg" alt="instagram blomster billede"></a></div>
+            <div><a href="...."><img class="ig2" src="images/billede2.jpeg" alt="instagram blomster billede"></a></div>
+            <div><a href="...."><img class="ig3" src="images/billede3.jpeg" alt="instagram blomster billede"></a></div>
+            <div><a href="...."><img class="ig4" src="images/billede4.jpeg" alt="insagram blomster billede"></a></div>
+            <div><a href="...."><img class="ig5" src="images/billede5.jpeg" alt="instagram blomsterbillede"></a></div>
+        </div>
+
+        <a href="#forsiden"><img class="bounce-top pilop" src="images/up-arrow.svg" alt="pil op svg"></a>
+
+    </main>
+
+
+
+
+    <br>
+
+    <footer>
+        <div class="streg"></div>
+        <div class="container_footer">
+            <div class="kontakt">
+                <h4>Kontakt</h4>
+                <p class="pcenter">Adresse Søvej 6, 6630 Rødding</p>
+                <p class="pcenter"><a href="tel:74 44 20 80">Telefon: 74 44 20 80</a></p>
+                <p class="pcenter"><a href="mailto:dorte@jelsblomster.dk"> dorte@jelsblomster.dk</a></p>
+                <br>
+            </div>
+
+            <div class="om_os">
+                <h4>Om os</h4>
+                <p class="pcenter">Åbningstider</p>
+                <p class="pcenter">Hvem er Tusindfryd</p>
+                <p class="pcenter">Find inspiration</p>
+                <br>
+            </div>
+
+            <div class="folg_os">
+                <h4>Følg os</h4>
+                <div class="flex_fbig">
+                    <img class="fb" src="images/facebook.svg" alt="facebook ikon">
+                    <img class="insta" src="images/instagram%20(1).svg" alt="instagram ikon">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <br>
+
+
+
+    <script src="js.js">
+        
+    </script>
+
+
+</body></html>

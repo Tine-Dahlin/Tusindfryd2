@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Husk unik title til alle sider-->
+    <title>Tusindfryd om os</title>
+    <!--husk en beskrivelse af siden i content-->
+    <meta name="description" content="Her finder du information omkring ejeren af Tusindfryd, Dorte. Samt oplysninger med åbningstider og kontakt.">
+    <link rel="stylesheet" href="css/omos.css">
+    <!-- det nedenfor slettes ved implementering-->
+    <link rel="stylesheet" href="css/omos.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar&family=Reem+Kufi&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="logo"><img src="images/logo%20endeligt.svg" alt="Logo"></a>
+            <nav>
+
+                <div class="dropdown"><button class="dropbtn">
+                        <a href="omos.html">Om os</a></button>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="udvalg.html">Udvalg</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">God bedring</a>
+                        <a href="vaertinde.html">Værtindegave</a>
+                        <a href="#">Student</a>
+                        <a href="#">Jul</a>
+                        <a href="#">Påske</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><a href="inspiration">Inspiration</a>
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Indret din bolig</a>
+                        <a href="plejning.html">Plejning</a>
+                        <a href="bryllup.html">Bryllups dekorationer</a>
+                        <a href="symbolik.html">Blomstersymbolik</a>
+                    </div>
+                </div>
+            </nav>
+            <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section id="cover">
+            <img class="cover1" src="images/omos-mobiltekst.jpg" alt="blomster coverbillede">
+            <img class="cover2" src="images/omos-computertekst.jpg" alt="blomster coverbillede">
+        </section>
+
+
+        <br>
+
+
+
+        <section class="container_hvem_er_vi">
+            <h2 class="hvem_er_vi">Hvem er vi?</h2>
+            <p class="omtekst">Tusindfryd er en <strong>lokal blomsterforretning i Jels,</strong> som blev etableret i 2009 af mig, Dorte Hansen.
+
+                Hver dag stræber vi efter at servicere og opfylde kundernes ønsker, hvad end det er <strong>buketter, begravelsesbinderi, gavekurve, bryllup eller brugskunst mm.</strong>
+                Med høj faglighed fra et veluddannet personale, er <strong>kvalitet</strong> i højsædet og vi går ikke på kompromis.
+                Vi befinder os i forlængelse af <strong>Super Brugsen</strong> i Jels. Uden for vores åbningstider, er der mulighed for at betale vores varer i Super Brugsen. På den måde kan du altid afhente gavekurve, friske blomster og buketter, også uden for vores åbningstid.
+                Desuden <strong>leverer</strong> vi også ud i lokalområdet. Hvis du ikke bor i nærheden, men ønsker at sende en hilsen til en du har kær i området, så kan du finde vores kontaktoplysninger nedenfor, eller alternativt bestille over bloomit.dk.</p>
+            <img class="dorte" src="images/dorte2.jpg" alt="portrait">
+        </section>
+
+
+
+        <section>
+            <h2 class="obningstider">Vores åbningstider</h2><br>
+
+            <div class="container_obningstider">
+                <div class="mandag">
+                    <h3 class="mantekst">Mandag<br>9:30-17:00</h3>
+                </div>
+                <div class="tirsdag">
+                    <h3 class="mantekst">Tirsdag<br>9:30-17:00</h3>
+                </div>
+                <div class="onsdag">
+                    <h3 class="mantekst">Onsdag<br>9:30-17:00</h3>
+                </div>
+                <div class="torsdag">
+                    <h3 class="mantekst">Torsdag<br>9:30-17:00</h3>
+                </div>
+                <div class="fredag">
+                    <h3 class="mantekst">Fredag<br>9:30-17:00</h3>
+                </div>
+                <div class="lordag">
+                    <h3 class="mantekst">Lørdag<br>9:30-12:00</h3>
+                </div>
+            </div>
+        </section>
+
+
+        <br>
+
+        <section>
+            <h2 class="find_vej">Find vej til os</h2>
+
+
+            <!--Inspiration from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_search_button-->
+            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                <input type="text" placeholder="Søg.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+            <br>
+
+            <div id="map"></div>
+        </section>
+
+
+        <br>
+
+        <section>
+            <h2 class="kontakt_os">Har du brug for hjælp? <br>Kontakt os her</h2><br>
+
+            <div class="container_kontakt">
+                
+
+                <img class="telefon" src="images/telefon3.png" alt="telefon ikon">
+                <h3 class="telefontekst"><a href="tel:74 44 20 80">+4574442080</a></h3>
+                <img class="brev" src="images/brev3.png" alt="brev ikon">
+                <h3 class="brevtekst"><a href="mailto:dorte@jelsblomster.dk">dorte@jelsblomster.dk</a></h3>
+                <img class="lokation" src="images/lokation3.png" alt="lokation ikon">
+                <h3 class="lokationtekst">Søvej 6, 6630 Rødding</h3>
+            </div>
+        </section>
+
+        <a href="#cover"><img class="bounce-top pilop" src="images/up-arrow.svg" alt="pil op svg"></a>
+
+    </main>
+
+
+    <footer>
+        <div class="streg"></div>
+        <div class="container_footer">
+            <div class="kontakt">
+                <h4>Kontakt</h4>
+                <p class="pcenter">Adresse Søvej 6, 6630 Rødding</p>
+                <p class="pcenter"><a href="tel:74 44 20 80">Telefon: 74 44 20 80</a></p>
+                <p class="pcenter"><a href="mailto:dorte@jelsblomster.dk">dorte@jelsblomster.dk</a></p>
+                <br>
+            </div>
+
+            <div class="om_os">
+                <h4>Om os</h4>
+                <p class="pcenter">Åbningstider</p>
+                <p class="pcenter">Hvem er Tusindfryd</p>
+                <p class="pcenter">Find inspiration</p>
+                <br>
+            </div>
+
+            <div class="folg_os">
+                <h4>Følg os</h4>
+                <div class="flex_fbig">
+                    <img class="fb" src="images/facebook.svg" alt="facebook ikon">
+                    <img class="insta" src="images/instagram%20(1).svg" alt="instagram ikon">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!--Template from Google maps developers - https://developers.google.com/maps/documentation/javascript/tutorial-->
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 55.357247,
+                    lng: 9.203057
+                },
+                zoom: 20
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGyPEFHzBEh1iZvw_FdKkKhCn_HbYI0wM&callback=initMap" async defer></script>
+
+
+    <script src="js.js">
+    </script>
+
+</body></html>

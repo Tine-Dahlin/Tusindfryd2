@@ -1,0 +1,746 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+/*Animation on arrow up inspiration from:https://animista.net/play/attention/bounce*/
+.bounce-top {
+    -webkit-animation: bounce-top 5s linear infinite both;
+    animation: bounce-top 5s linear infinite both;
+}
+
+
+.pilop {
+    width: 5%;
+    justify-content: center;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 1.8em;
+    text-align: center;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h3 {
+    font-weight: normal
+}
+
+h4 {
+    text-align: center;
+}
+
+.pcenter {
+    text-align: center;
+}
+
+
+.cover1 {
+    width: 100%;
+    display: block;
+}
+
+.cover2 {
+    display: none;
+}
+
+
+.hvem_er_vi {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.omtekst {
+    margin: 0 6%;
+        font-size: 1em;
+    }
+
+
+.dorte {
+    width: 87%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+
+/*Kontakt os*/
+.kontakt_os {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container_kontakt {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+
+}
+
+.telefon,
+.brev,
+.lokation {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.telefon {
+    grid-area: 1/1/2/2;
+}
+
+.brev {
+    grid-area: 4/1/5/2;
+}
+
+.lokation {
+    grid-area: 6/1/7/2;
+}
+
+.telefontekst {
+    grid-area: 2/1/3/2;
+    text-align: center;
+
+}
+
+.brevtekst {
+    grid-area: 5/1/6/2;
+    text-align: center;
+
+}
+
+.lokationtekst {
+    grid-area: 7/1/8/2;
+    text-align: center;
+
+}
+
+
+
+/*Åbningstider*/
+.obningstider {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 60px;
+}
+
+.container_obningstider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.mantekst {
+    text-align: center;
+}
+
+.mandag,
+.tirsdag,
+.onsdag,
+.torsdag,
+.fredag,
+.lordag {
+    background-color: #e9e2d9;
+    padding: 20px;
+}
+
+.mandag,
+.onsdag,
+.fredag {
+    margin-left: 25px;
+}
+
+.tirsdag,
+.torsdag,
+.lordag {
+    margin-right: 25px;
+}
+
+.mandag {
+    grid-area: 1/1/2/2;
+
+}
+
+.tirsdag {
+    grid-area: 1/2/2/3;
+}
+
+.onsdag {
+    grid-area: 2/1/3/2;
+}
+
+.torsdag {
+    grid-area: 2/2/3/3;
+}
+
+.fredag {
+    grid-area: 3/1/4/2;
+}
+
+.lordag {
+    grid-area: 3/2/4/3;
+}
+
+
+
+/*Find vej*/
+
+.find_vej {
+    text-align: center;
+}
+
+
+/*Inspiration from */
+form.example {
+    display: flex;
+    justify-content: space-around;
+ 
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 0.5px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #E9E2D9;
+    color: white;
+    font-size: 17px;
+    border: 0.5px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: grey;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 200px;
+    margin: 0 25px;
+}
+
+
+
+/*footer*/
+
+.streg {
+    background-color: black;
+    height: 0.5px;
+
+}
+
+.flex_fbig {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.fb {
+    margin-left: 35%;
+     width: 10%;
+}
+
+.insta {
+    margin-right: 35%;
+    width: 10%;
+}
+
+
+@media only screen and (min-width: 700px) {
+
+    .hvem_er_vi {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .find_vej {
+        font-size: 2em;
+    }
+
+    .kontakt_os {
+        font-size: 2em;
+    }
+
+
+    h1 {
+        font-size: 3em
+    }
+
+    .dorte {
+        width: 80%;
+    }
+
+
+    .omtekst {
+        margin: 0 75px;
+        line-height: 1.7;
+        font-size: 1.2em;
+    }
+
+    .container_kontakt {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        margin: 0 50px;
+
+
+    }
+
+    .telefon,
+    .brev,
+    .lokation {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .telefon {
+        grid-area: 1/1/2/2;
+    }
+
+    .brev {
+        grid-area: 1/2/2/3;
+    }
+
+    .lokation {
+        grid-area: 1/3/2/4;
+    }
+
+    .telefontekst {
+        grid-area: 2/1/3/2;
+
+    }
+
+    .brevtekst {
+        grid-area: 2/2/3/3;
+
+    }
+
+    .lokationtekst {
+        grid-area: 2/3/3/4;
+
+    }
+
+    /*Åbningstider*/
+    .obningstider {
+        text-align: center;
+        font-size: 2.5em;
+    }
+
+    .container_obningstider {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 25px;
+        margin: 0 100px;
+    }
+
+    .mandag,
+    .tirsdag,
+    .onsdag,
+    .torsdag,
+    .fredag,
+    .lordag {
+        background-color: #e9e2d9;
+        padding: 20px;
+    }
+
+
+    .mandag,
+    .onsdag,
+    .fredag {
+        margin-left: 0px;
+    }
+
+    .tirsdag,
+    .torsdag,
+    .lordag {
+        margin-right: 0px;
+    }
+
+    .mandag {
+        grid-area: 1/1/2/2;
+
+    }
+
+    .tirsdag {
+        grid-area: 1/2/2/3;
+    }
+
+    .onsdag {
+        grid-area: 1/3/2/4;
+
+    }
+
+    .torsdag {
+        grid-area: 2/1/3/2;
+    }
+
+    .fredag {
+        grid-area: 2/2/3/3;
+    }
+
+    .lordag {
+        grid-area: 2/3/3/4;
+    }
+
+    /*Find vej*/
+    #map {
+        height: 300px;
+        margin: 0 100px;
+    }
+
+
+    .streg {
+        background-color: black;
+        height: 1px;
+    }
+
+    .container_footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 02%;
+    }
+
+    .flex_fbig {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+
+}
+
+
+@media only screen and (min-width: 850px) {
+
+    h1 {
+        font-size: 4em;
+    }
+
+
+
+
+    /*Dorte*/
+
+    .dorte {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .container_hvem_er_vi {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        margin: 0 40px;
+        margin-bottom: 60px;
+    }
+
+    .hvem_er_vi {
+        grid-area: 1/1/2/3;
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .omtekst {
+        grid-area: 2/1/3/2;
+        margin: 0;
+        line-height: 1.8;
+    }
+
+    .dorte {
+        grid-area: 2/2/3/3;
+    }
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    /*Find vej*/
+    #map {
+        height: 500px;
+        margin: 0 150px;
+    }
+
+    .hvem_er_vi {
+        font-size: 2.3em;
+    }
+
+    .find_vej {
+        font-size: 2.3em;
+    }
+    
+    p.omtekst {
+        font-size:1.1em;
+    }
+
+    .kontakt_os {
+        font-size: 2.3em;
+    }
+
+    .omtekst {
+        font-size: 1em;
+    }
+
+    .obningstider {
+        font-size: 2.3em;
+    }
+
+    .brevtekst,
+    .telefontekst,
+    .lokationtekst {
+        font-size: 1.2em;
+    }
+
+    .maintekst {
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+
+    .dorte {
+        width: 70%;
+    }
+
+    .container_hvem_er_vi {
+        margin: 0 10px;
+        grid-gap: 20px;
+
+    }
+
+    .hvem_er_vi {
+        grid-area: 1/1/2/3;
+    }
+
+    .omtekst {
+        grid-area: 2/1/3/2;
+        margin: 0 0 0 50px;
+        line-height: 1.8;
+    }
+
+    .dorte {
+        grid-area: 2/2/3/3;
+    }
+
+    .cover1 {
+        display: none;
+    }
+
+    .cover2 {
+        width: 100%;
+        display: block;
+
+    }
+
+    .container_obningstider {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 25px;
+        margin: 0 150px;
+    }
+
+    .telefon,
+    .brev,
+    .lokation {
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+}
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-5-26 11:2:37
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation bounce-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-top {
+    0% {
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        -webkit-transform: translateY(-24px);
+        transform: translateY(-24px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    65% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    82% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+
+@keyframes bounce-top {
+    0% {
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        -webkit-transform: translateY(-24px);
+        transform: translateY(-24px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    65% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    82% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,668 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Mukta Malar', sans-serif;
+}
+
+/*Animation on arrow up inspiration from:https://animista.net/play/attention/bounce*/
+.bounce-top {
+	-webkit-animation: bounce-top 5s linear infinite both;
+	        animation: bounce-top 5s linear infinite both;
+}
+
+
+.pilop {
+    width: 5%;
+    justify-content: center;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom:50px;
+    scroll-behavior: smooth;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 9px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 45%;
+
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid #b0c4b9;
+}
+
+.button1 {
+    background-color: #b0c4b9;
+    color: white;
+}
+
+.baggrund {
+    background-color: #E9E2D9;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/*generel kode*/
+
+/*størrelser*/
+
+h1 {
+    font-size: 1.6em;
+    margin: 10px;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.pcenter {
+    text-align: center;
+}
+
+
+
+.h3center {
+    text-align: center;
+}
+
+
+/*links*/
+a {
+    color: black;
+}
+
+/*cover start*/
+.bryllup-cover-tlf {
+    width: 100%;
+    display: block
+}
+
+.bryllup-cover-com {
+    display: none;
+}
+
+/*tekst og billeder*/
+
+.bryllup-intro-kasse {
+    margin: 10px;
+}
+
+.bryllup-intro-img {
+    width: 100%;
+}
+
+.romantisk-kasse {
+    margin: 10px;
+}
+
+.bryllup-romantik-1 {
+    width: 100%;
+}
+
+.rustik-kasse {
+    margin: 10px;
+}
+
+.bryllup-rustik-2 {
+    width: 100%;
+}
+
+.farve-kasse {
+    margin: 10px;
+}
+
+.bryllup-farve-1 {
+    width: 100%;
+}
+
+.bryllup-slut {
+    margin: 10px;
+}
+
+
+
+.button-placement {
+    margin-left: 25%;
+}
+
+
+.bryllup-romantik-2 {
+    display: none;
+}
+
+.bryllup-rustik-1 {
+    display: none;
+}
+
+.bryllup-farve-2 {
+    display: none;
+}
+
+/*footer*/
+.streg {
+    background-color: black;
+    height: 0.5px;
+
+}
+
+.flex_fbig {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fb {
+    width: 10%;
+    margin-left: 35%;
+}
+
+.insta {
+    width: 10%;
+     margin-right: 35%;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    .button {
+        border-radius: 20px;
+        width: 25%;
+        padding: 8px;
+    }
+
+    /*størrelser*/
+    .pcenter {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+
+
+
+    .overordnet-bryllup-grid {
+        display: grid;
+        grid-gap: 20px;
+    }
+
+    /*intro grid*/
+    .bryllup-grid-container-1 {
+        display: grid;
+        grid-gap: 20px;
+        align-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2%;
+
+    }
+
+    .bryllup-intro-kasse {
+        grid-area: 1/1/1/3;
+    }
+
+    .bryllup-intro-img {
+        grid-area: 1/3/1/4;
+    }
+
+
+    /*det romantiske bryllup grid*/
+
+    .bryllup-grid-container-2 {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2%;
+    }
+
+
+    .romantisk-kasse {
+        grid-area: 1/2/1/4;
+    }
+
+    .bryllup-romantik-1 {
+        grid-area: 1/1/1/2;
+        width: 100%;
+    }
+
+    .bryllup-romantik-2 {
+        grid-area: 2/1/2/4;
+        width: 100%;
+        display: block;
+    }
+
+    /*det rustikke bryllup grid*/
+
+    .bryllup-grid-container-3 {
+        display: grid;
+        grid-gap: 20px;
+        align-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2%;
+    }
+
+    .rustik-kasse {
+        grid-area: 1/1/1/3;
+    }
+
+    .bryllup-rustik-1 {
+        grid-area: 1/3/1/4;
+        width: 100%;
+        display: block;
+    }
+
+    .bryllup-rustik-2 {
+        grid-area: 2/1/2/4;
+        width: 100%;
+        display: block;
+    }
+
+    /*det farverige bryllup grid*/
+
+    .bryllup-grid-container-4 {
+        display: grid;
+        grid-gap: 20px;
+        align-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2%;
+    }
+
+    .farve-kasse {
+        grid-area: 1/2/1/4;
+    }
+
+    .bryllup-farve-1 {
+        grid-area: 1/1/1/2;
+        width: 100%;
+    }
+
+    .bryllup-farve-2 {
+        grid-area: 2/1/2/4;
+        width: 100%;
+        display: block;
+
+    }
+
+    /*bryllup grid afslutning*/
+    .bryllup-grid-container-5 {
+        display: grid;
+        grid-gap: 20px;
+        align-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2%;
+    }
+
+    .bryllup-slut {
+        grid-area: 1/1/1/4;
+    }
+
+    .button-placement {
+        grid-area: 2/2/2/3;
+    }
+
+    /*Grid slut*/
+
+
+    /*footer*/
+    .streg {
+        background-color: black;
+        height: 1px;
+    }
+
+    .container_footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 02%;
+    }
+
+    .flex_fbig {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    
+     .button {
+        border-radius: 35px;
+        width: 25%;
+        padding: 10px;
+
+    }
+    
+    /*generel kode*/
+    .pcenter {
+        font-size: 1.3em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 2.7em;
+    }
+
+    h4 {
+        font-size: 1.3em;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+
+    /*coverbillede*/
+    .bryllup-cover-tlf {
+        display: none;
+    }
+
+    .bryllup-cover-com {
+        display: block;
+        width: 100%;
+    }
+
+
+    /*grid*/
+    .overordnet-bryllup-grid {
+        display: grid;
+        grid-gap: 20px;
+
+    }
+
+    /*intro grid*/
+    .bryllup-grid-container-1 {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .bryllup-intro-kasse {
+        grid-area: 1/1/1/3;
+    }
+
+    .bryllup-intro-img {
+        width: 100%;
+        grid-area: 1/3/1/4;
+    }
+
+
+    /*det romantiske bryllup grid*/
+
+    .bryllup-grid-container-2 {
+        display: grid;
+        grid-gap: 20px;
+        align-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top:-50px;;
+    }
+
+    .romantisk-kasse {
+        grid-area: 1/2/1/4;
+    }
+
+    .bryllup-romantik-1 {
+        grid-area: 1/1/1/2;
+        width: 100%;
+    }
+
+    .bryllup-romantik-2 {
+        grid-area: 2/1/2/4;
+        width: 100%;
+        display: block;
+    }
+
+    /*det rustikke bryllup grid*/
+
+    .bryllup-grid-container-3 {
+        display: grid;
+        grid-gap: 20px;
+        align-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .rustik-kasse {
+        grid-area: 1/1/1/3;
+    }
+
+    .bryllup-rustik-1 {
+        grid-area: 1/3/1/4;
+        width: 100%;
+        display: block;
+    }
+
+    .bryllup-rustik-2 {
+        grid-area: 2/1/2/4;
+        width: 100%;
+        display: block;
+    }
+
+    /*det farverige bryllup grid*/
+
+    .bryllup-grid-container-4 {
+        display: grid;
+        grid-gap: 20px;
+        align-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .farve-kasse {
+        grid-area: 1/2/1/4;
+    }
+
+    .bryllup-farve-1 {
+        grid-area: 1/1/1/2;
+        width: 100%;
+    }
+
+    .bryllup-farve-2 {
+        grid-area: 2/1/2/4;
+        width: 100%;
+        display: block;
+    }
+
+    /*bryllup grid afslutning*/
+    .bryllup-grid-container-5 {
+        display: grid;
+        grid-gap: 20px;
+        align-items: stretch;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .bryllup-slut {
+        grid-area: 1/1/1/4;
+    }
+
+    .button-placement {
+        grid-area: 2/2/2/3;
+    }
+
+    /*Grid slut*/
+
+
+}
+
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-5-26 11:2:37
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation bounce-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+            transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
